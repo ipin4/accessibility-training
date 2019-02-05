@@ -129,6 +129,40 @@
   margin-bottom: .5rem;
 }
 
+.invisible {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.input.is-active,
+.input.is-focused,
+.input:active,
+.input:focus,
+.textarea.is-active,
+.textarea.is-focused,
+.textarea:active,
+.textarea:focus,
+.select select.is-active,
+.select select.is-focused,
+.select select:active,
+.select select:focus,
+.button.is-info.is-focused:not(:active),
+.button.is-info:focus:not(:active),
+.button.is-link.is-focused:not(:active),
+.button.is-link:focus:not(:active),
+.button.is-focused:not(:active),
+.button:focus:not(:active),
+a:focus {
+  box-shadow: none;
+  border: 2px solid purple;
+  outline: 0;
+}
+
+.navbar-burger {
+  color: #E6EAEE;
+}
+
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
