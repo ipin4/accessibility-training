@@ -1,11 +1,23 @@
 (function() {
   var burger = document.querySelector(".burger");
   var menu = document.querySelector("#" + burger.dataset.target);
+
   burger.addEventListener("click", function() {
     burger.classList.toggle("is-active");
     menu.classList.toggle("is-active");
   });
+
+  var updateInfo = document.querySelector("#updateInfo");
+  window.onload = addAriaLiveUpdater(updateInfo);
 })();
+
+function addAriaLiveUpdater(elem) {
+  setInterval(function() {
+    var newContent = 'some new info' + Math.random();
+    elem.innerHtml = newContent
+    console.log(newContent);
+  }, 1000)
+}
 
 document.querySelectorAll("#nav li").forEach(function(navEl) {
   navEl.onclick = function() {
