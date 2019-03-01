@@ -8,6 +8,9 @@
   margin-bottom: -1px !important;
   position: relative;
 }
+.tabs ul {
+  padding: 1px;
+}
 .tab-content {
   padding: 2rem;
 }
@@ -153,7 +156,7 @@
 .button.is-link:focus:not(:active),
 .button.is-focused:not(:active),
 .button:focus:not(:active),
-a:focus {
+a:focus, #tabmenu a:focus {
   box-shadow: none;
   border: 2px solid purple;
   outline: 0;
