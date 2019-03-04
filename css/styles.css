@@ -166,6 +166,10 @@ a:focus, #tabmenu a:focus {
   color: #E6EAEE;
 }
 
+.none {
+  display: none;
+}
+
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
